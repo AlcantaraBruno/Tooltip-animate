@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/*background: #ffffe7;*/
+	background: #181818;
+
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+	Oxygem, 
+		Ubuntu, Ceantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* configuração do card */
+.tooltip {
+	background: #25D366;
+	color: white;
+	padding: 1em;
+	border-radius: 10px;
+	width: 250px;
+	clip-path: circle(13% at 87% 37%);
+	transition:  all .3s ease-in-out;
+	cursor:pointer;
+	font-weight: bold;
+	font-family: 'Dosis', sans-serif;
+}
+
+.tooltip:hover {
+	clip-path: circle(100%);
+}
+
+.tooltip h3 {
+
+	margin-top: 10px;
+}
+
+.icon {
+	float: right;
+	transition: opacity 0.3s;
+}
+
+.tooltip:hover span{
+	opacity: 0;
+}
+
